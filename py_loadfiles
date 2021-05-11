@@ -2,13 +2,17 @@
 compilation of python functions useful for loading data or files.
 '''
 
-
-def all_files_in_dir(mypath)
-  '''
+ 
+ 
+ '''
+  purpose : list all files in a directory in one line
   reference : https://stackoverflow.com/questions/3207219/how-do-i-list-all-files-of-a-directory
   input : path
   output : list of file names
-  '''
+ '''
+
+def all_files_in_dir(mypath)
+
   from os import walk
   _, _, filenames = next(walk(mypath))
   return filenames
