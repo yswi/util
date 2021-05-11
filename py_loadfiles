@@ -1,0 +1,14 @@
+'''
+compilation of python functions useful for loading data or files.
+'''
+
+
+def all_files_in_dir(mypath)
+  '''
+  reference : https://stackoverflow.com/questions/3207219/how-do-i-list-all-files-of-a-directory
+  input : path
+  output : list of file names
+  '''
+  from os import walk
+  _, _, filenames = next(walk(mypath))
+  return filenames
