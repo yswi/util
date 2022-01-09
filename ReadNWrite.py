@@ -36,16 +36,16 @@ def read_xyz(filename):
     xyz.close()
 
     if n_atoms != len(coordinates):
-        raise ValueError("File says %d atoms but read %d points." % (n_atoms, len(coordinates))
+        raise ValueError("File says %d atoms but read %d points." % (n_atoms, len(coordinates)))
 
    return atoms, coordinates
 
                          
-def write_list_as_txt(list, path = None):
+def write_list_as_txt(lst, path = None):
     if path is None:
         path = '.' # Save in current directory
                          
     with open(path, "w") as f:
-        for ele in list:
+        for ele in lst:
             f.write(ele)
             f.write(',\n')
