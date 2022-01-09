@@ -3,25 +3,28 @@ compilation of python functions useful for loading data or files.
 '''
 
  
-
-
-def read_all_files_in_dir(mypath):
- 
  '''
   read_all_files_in_dir : list all files in a directory in one line
   reference : https://stackoverflow.com/questions/3207219/how-do-i-list-all-files-of-a-directory
   input : path
   output : list of file names
  '''
+
+def read_all_files_in_dir(mypath):
  
   from os import walk
   _, _, filenames = next(walk(mypath))
   return filenames
  
-def read_xyz(filename):
+ 
+ 
+ 
+ 
 '''
    read_xyz : Read *.xyz file (point cloud) 
 '''
+def read_xyz(filename):
+
  
     atoms = []
     coordinates = []
@@ -40,6 +43,9 @@ def read_xyz(filename):
 
    return atoms, coordinates
 
+  
+  
+  
                          
 def write_list_as_txt(lst, path = None):
     if path is None:
