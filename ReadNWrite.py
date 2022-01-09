@@ -43,7 +43,14 @@ def read_xyz(filename):
 
    return atoms, coordinates
 
-  
+         
+def read_txt_as_list(lst, path = None):
+    if path is None:
+         path = '.'
+    
+    with open('quotes.txt', encoding='utf8') as f:
+         for line in f:
+             print(line.strip('./n'))  
   
   
                          
@@ -55,3 +62,4 @@ def write_list_as_txt(lst, path = None):
         for ele in lst:
             f.write(ele)
             f.write(',\n')
+         
