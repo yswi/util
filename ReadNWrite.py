@@ -5,7 +5,7 @@ compilation of python functions useful for loading data or files.
  
 
 
-def read_all_files_in_dir(mypath)
+def read_all_files_in_dir(mypath):
  
  '''
   read_all_files_in_dir : list all files in a directory in one line
