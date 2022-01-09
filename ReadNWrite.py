@@ -13,14 +13,15 @@ def read_all_files_in_dir(mypath)
   input : path
   output : list of file names
  '''
+ 
   from os import walk
   _, _, filenames = next(walk(mypath))
   return filenames
  
 def read_xyz(filename):
-  ''' 
+'''
    read_xyz : Read *.xyz file (point cloud) 
-  '''
+'''
  
     atoms = []
     coordinates = []
