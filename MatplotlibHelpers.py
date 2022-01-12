@@ -3,7 +3,7 @@ import numpy as np
 import matplotlib.pyplot as plt
 
 
-### PLOT DIFFERENT DATA TYPES ###
+### PLOT DIFFERENT DATA STYLE ###
 
 def plot_3d_scatter(xdata, ydata, zdata):
     fig = plt.figure()
@@ -25,16 +25,6 @@ def plot_3d_line(xdata, ydata, zdata):
     yline = np.cos(zline)
     ax.plot3D(xline, yline, zline, 'gray')
     
-def subplot_line():
-    plt.figure(figsize = (10,20))
-    plt.subplot(221)
-
-    # equivalent but more general
-    ax1 = plt.subplot(2, 2, 1)
-    ax1.plot*
-
-    # add a subplot with no frame
-    ax2 = plt.subplot(222, frameon=False)
     
     
     
@@ -44,3 +34,14 @@ def integer_xtick_grid(data):
     plt.grid(True) # grid on
     plt.xticks(np.arange(0, data.shape[0], step=1)) # Integer xticks
     plt.show()
+    
+def plot_subplot():
+    plt.figure(figsize = (10,20))
+    plt.subplot(221)
+
+    # equivalent but more general
+    ax1 = plt.subplot(2, 2, 1)
+    ax1.plot*
+
+    # add a subplot with no frame
+    ax2 = plt.subplot(222, frameon=False)
