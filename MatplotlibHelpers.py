@@ -3,7 +3,7 @@ import numpy as np
 import matplotlib.pyplot as plt
 
 
-### DIFFERNET DYPES OF PLOTS ###
+### PLOT DIFFERENT DATA TYPES ###
 
 def plot_3d_scatter(xdata, ydata, zdata):
     fig = plt.figure()
