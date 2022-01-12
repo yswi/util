@@ -3,6 +3,8 @@ import numpy as np
 import matplotlib.pyplot as plt
 
 
+### DIFFERNET DYPES OF PLOTS ###
+
 def plot_3d_scatter(xdata, ydata, zdata):
     fig = plt.figure()
     ax = plt.axes(projection='3d')
@@ -24,6 +26,7 @@ def plot_3d_line(xdata, ydata, zdata):
     ax.plot3D(xline, yline, zline, 'gray')
     
 def subplot_line():
+    plt.figure(figsize = (10,20))
     plt.subplot(221)
 
     # equivalent but more general
@@ -34,3 +37,10 @@ def subplot_line():
     ax2 = plt.subplot(222, frameon=False)
     
     
+    
+### DIFFERENT PLOT SETTINGS ###
+def integer_xtick_grid(data):
+    plt.plot(data)
+    plt.grid(True) # grid on
+    plt.xticks(np.arange(0, data.shape[0], step=1)) # Integer xticks
+    plt.show()
